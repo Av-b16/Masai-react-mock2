@@ -1,0 +1,70 @@
+/* Style for the container of all books */
+.books-container {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if there's not enough space */
+    gap: 20px; /* Adds space between the cards */
+    justify-content: space-around; /* Distribute the cards evenly with space between them */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for individual book cards */
+  .book-card {
+    width: 220px; /* Set a fixed width for each book card */
+    background-color: #f9f9f9; /* Light background color for the cards */
+    border-radius: 8px; /* Slight rounding of corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the cards */
+    overflow: hidden; /* To prevent any content from overflowing outside the card */
+    text-align: center; /* Center text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .book-card:hover {
+    transform: translateY(-10px); /* Slightly raise the card when hovered */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+  }
+  
+  /* Style for the book cover image */
+  .book-image {
+    width: 100%; /* Make the image take up the full width of the card */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Crop the image if it doesn't fit perfectly */
+  }
+  
+  /* Style for the book title */
+  .book-card h2 {
+    font-size: 18px;
+    color: #333; /* Dark color for the title */
+    margin: 10px 0;
+  }
+  
+  /* Style for the category */
+  .book-card p {
+    font-size: 14px;
+    color: #666; /* Lighter color for the category */
+    margin: 5px 0;
+  }
+  
+  /* Style for the price */
+  .book-card p:last-child {
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for the price */
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the link */
+  .book-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db; /* Blue background for the link */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Round the corners of the link */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-link:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+  }
+  
